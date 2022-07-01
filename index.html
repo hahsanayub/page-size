@@ -69,6 +69,24 @@
         const urlParams = new URLSearchParams(window.location.search);
         const size = urlParams.get('size');
 
+
+        const totalDigits = size.toString().length
+        if(totalDigits ===1){
+            document.getElementById('size').style.left="45%"
+        }
+        else if(totalDigits ===2){
+            document.getElementById('size').style.left="35%"
+        }
+        else if(totalDigits ===3){
+            document.getElementById('size').style.left="30%"
+        }
+        else if(totalDigits ===4){
+            document.getElementById('size').style.left="30%"
+            document.getElementById('size').style.fontSize="100px"
+
+        }
+
+
         if(size >=3000){
             document.getElementById('size').innerHTML= 3000;
 
