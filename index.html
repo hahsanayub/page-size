@@ -84,7 +84,7 @@
             document.getElementById('size').style.left="33%"
         }
         else if(totalDigits ===3){
-            document.getElementById('size').style.left="28%"
+            document.getElementById('size').style.left="27%"
         }
         else if(totalDigits ===4){
             document.getElementById('size').style.left="17%"
@@ -95,6 +95,8 @@
 
         if(size >=9999){
             document.getElementById('size').innerHTML= 9999;
+            document.getElementById('size').style.left="17%"
+            document.getElementById('size').style.fontSize="100px"
 
         }
         else{
